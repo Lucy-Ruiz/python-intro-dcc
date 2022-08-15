@@ -93,7 +93,6 @@ l_string('it')
 l_string('lettuce')
 
 #Task 1 String manipulation
-
 def team_characters(team):
     for character in team:
         print(team[0] + team[-1])
@@ -102,7 +101,6 @@ def team_characters(team):
 team_characters('Packers')
 
 #Task 2 
-
 def numbers_100():
     for number in range(101):
         if number % 3 == 0 and number % 5 == 0:
@@ -118,9 +116,29 @@ def numbers_100():
 numbers_100()
 
 #Task 3 word-letter indexing
-
-
 def mixed_word(word):
     final_result = ''
-    for character in range(len(word)):
-        print()
+    for index in range(len(word)):
+        final_result += word[index] + str(index)
+        print(index)
+        print(word[index])
+    print(final_result)
+
+mixed_word('word')
+
+#Task 4 
+def ingredient_list(ingredients):
+    while True:
+        user_ingredient = input('What ingredient would you like to search for?: ')
+        found = False
+        for item in ingredients:
+            if user_ingredient == item:
+                found = True
+        if found == True:
+            print(user_ingredient)
+            return(user_ingredient)
+        else:
+            print('Search for another ingredient')
+
+pesto_ingredients = ['garlic', 'basil', 'cheese', 'salt', 'pepper']
+ingredient_list(pesto_ingredients)   

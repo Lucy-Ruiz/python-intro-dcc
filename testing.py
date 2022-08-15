@@ -9,6 +9,7 @@ def display_options(some_list):
         option_number += 1
 
 
+#Functions II
 import random
 list_of_pets = ['dog', 'cat', 'hamster', 'bird', 'goldfish']
 def pick_random_item(list_of_items):

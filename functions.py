@@ -118,3 +118,9 @@ def numbers_100():
 numbers_100()
 
 #Task 3 word-letter indexing
+
+
+def mixed_word(word):
+    final_result = ''
+    for character in range(len(word)):
+        print()

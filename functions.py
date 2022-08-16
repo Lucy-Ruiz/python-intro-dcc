@@ -142,3 +142,13 @@ def ingredient_list(ingredients):
 
 pesto_ingredients = ['garlic', 'basil', 'cheese', 'salt', 'pepper']
 ingredient_list(pesto_ingredients)   
+
+#Task 5
+def reverse_list(list_of_items):
+    items_reversed = []
+    for i in range(len(list_of_items) - 1, -1, -1):
+        items_reversed.append(list_of_items[i])
+    print(items_reversed)
+
+colors = ['yellow', 'purple', 'orange']
+reverse_list(colors)
